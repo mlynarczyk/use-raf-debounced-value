@@ -131,7 +131,7 @@ module.exports = {
       {
         devDependencies: false,
         optionalDependencies: false,
-        peerDependencies: false,
+        peerDependencies: true,
       },
     ],
 
