@@ -15,3 +15,17 @@ Npm:
 ```
 npm i use-raf-debounced-value --save
 ```
+
+# Usage
+
+```tsx
+import { useRafDebouncedValue } from 'use-raf-debounced-value';
+import { useExampleHook } from 'example';
+
+export const useDebouncedExampleHook = () => {
+  const value = useExampleHook();
+  const [debouncedValue] = useRafDebouncedValue(value);
+
+  return debouncedValues;
+};
+```
