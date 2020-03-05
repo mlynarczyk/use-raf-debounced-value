@@ -26,6 +26,6 @@ export const useDebouncedExampleHook = () => {
   const value = useExampleHook();
   const [debouncedValue] = useRafDebouncedValue(value);
 
-  return debouncedValues;
+  return debouncedValue;
 };
 ```
