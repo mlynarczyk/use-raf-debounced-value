@@ -11,11 +11,5 @@ export function useRafDebouncedValue<T>(value: T) {
     };
   }, [value, setDebouncedState]);
 
-  useEffect(() => {
-    return () => {
-      queued.current && cancelAnimationFrame(queued.current);
-    };
-  }, []);
-
   return [debouncedState];
 }
